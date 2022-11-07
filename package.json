@@ -1,0 +1,52 @@
+{
+  "name": "tdd-for-ui-demo-2022",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://tylerhawkins.info/tdd-for-ui-demo-2022/build/",
+  "description": "This project is used in a presentation to show how we can use test-driven development to build user interfaces. It's not as hard as you may think!",
+  "scripts": {
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"src/**/*.{js,jsx,md}\"",
+    "format:watch": "onchange \"src/**/*.{js,jsx,md}\" -- prettier --write {{changed}}",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "test:coverage": "react-scripts test --watchAll=false --coverage"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/index.js"
+    ]
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^13.5.0",
+    "onchange": "^7.1.0",
+    "prettier": "^2.7.1",
+    "react-scripts": "4.0.1"
+  }
+}
