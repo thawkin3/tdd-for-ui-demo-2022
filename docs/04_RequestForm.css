@@ -1,0 +1,26 @@
+form {
+  border: solid 0.0625rem #000;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  display: inline-block;
+  text-align: left;
+}
+
+.formGroup {
+  margin-bottom: 2rem;
+}
+
+.formGroup.error {
+  margin-bottom: 0;
+}
+
+label {
+  width: 6rem;
+  display: inline-block;
+}
+
+.errorMessage {
+  color: red;
+  margin-top: 0;
+  line-height: 1;
+}
